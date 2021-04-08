@@ -1,0 +1,8 @@
+FROM vm/ubuntu:18.04
+RUN echo start
+
+RUN sleep 20
+
+SKIP REMAINING IF LAYER_CI_BRANCH='main'
+
+RUN echo hello
