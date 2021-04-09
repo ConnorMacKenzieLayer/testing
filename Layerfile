@@ -3,6 +3,6 @@ RUN echo start
 
 RUN sleep 20
 
-SKIP REMAINING IF LAYER_CI_BRANCH=master
+SKIP REMAINING IF LAYERCI_BRANCH=master
 
 RUN echo hello
