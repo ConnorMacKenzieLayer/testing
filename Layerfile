@@ -9,4 +9,4 @@ RUN echo hello
 
 SKIP REMAINING IF LAYERCI_BRANCH=test
 
-RUN echo bye
+RUN echo byebye
