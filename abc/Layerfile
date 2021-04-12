@@ -1,0 +1,9 @@
+FROM vm/ubuntu:18.04
+
+RUN echo start
+
+SKIP REMAINING IF LAYERCI_BRANCH!=master
+
+RUN echo hello
+
+RUN echo byebye
