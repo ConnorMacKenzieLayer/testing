@@ -1,7 +1,5 @@
 FROM vm/ubuntu:18.04
 
-SKIP REMAINING IF LAYERCI_BRANCH=master
-
 RUN echo start
 
 RUN sleep 20
@@ -13,3 +11,5 @@ RUN echo hello
 SKIP REMAINING IF LAYERCI_BRANCH!=master
 
 RUN echo byebye
+
+SKIP REMAINING IF LAYERCI_BRANCH=master
