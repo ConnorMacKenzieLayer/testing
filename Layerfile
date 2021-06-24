@@ -1,8 +1,4 @@
 FROM vm/ubuntu:18.04
 RUN echo start
-
 RUN sleep 20
-
-SKIP REMAINING IF LAYERCI_BRANCH=master&GIT_COMMIT=3d87d6372cfa7a79d54c7b27b60d4b7ff05f12ed
-
 RUN echo hello
