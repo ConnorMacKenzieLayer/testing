@@ -2,6 +2,4 @@ FROM /Layerfile
 
 SPLIT 2
 
-RUN echo hello
-
 RUN echo byebye
