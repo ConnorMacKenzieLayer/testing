@@ -1,4 +1,6 @@
 #This is an example LayerCI configuration for React!
 FROM vm/ubuntu:18.04
 
+RUN sleep 120
+
 RUN echo hello
