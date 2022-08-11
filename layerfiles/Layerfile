@@ -1,5 +1,0 @@
-FROM /Layerfile
-
-SPLIT 2
-
-RUN echo bye
