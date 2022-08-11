@@ -1,4 +1,4 @@
 #!/bin/bash
 set -e
-sleep  5
+sleep  10
 exit 1
