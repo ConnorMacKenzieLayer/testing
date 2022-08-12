@@ -1,2 +1,8 @@
-test
-change
+#!/bin/bash
+
+tests=($(find __tests__/ -regex '.*\.test.*'))
+
+echo "tests to run:"
+printf '  %s\n' "${tests[@]}"
+
+parallel --compress --halt now,fail=1 yarn test ::: ${tests[@]}
