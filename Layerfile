@@ -6,6 +6,6 @@ COPY . .
 RUN sudo apt-get update
 RUN sudo apt-get install parallel
 
-RUN chmod +x test.sh
+RUN chmod +x test.sh tests/one.sh tests/two.sh
 
 RUN ./test.sh
