@@ -1,5 +1,5 @@
 #!/bin/bash
-
+set -e
 tests=($(find tests | sed 1d))
 
 echo "tests to run:"
