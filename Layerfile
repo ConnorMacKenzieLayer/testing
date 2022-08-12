@@ -8,4 +8,4 @@ RUN sudo apt-get install parallel
 
 RUN chmod +x test.sh
 
-RUN ./test.sh | echo $?
+RUN ./test.sh
