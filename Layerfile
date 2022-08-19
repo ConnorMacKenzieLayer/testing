@@ -3,6 +3,6 @@ FROM webapp.io/base:latest
 
 COPY . .
 
-RUN chmod +x test.sh
+RUN sleep 10
 
-RUN ./test.sh
+RUN echo hello!
