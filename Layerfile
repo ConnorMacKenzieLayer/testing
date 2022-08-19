@@ -1,11 +1,8 @@
 #Use an Ubuntu 18.04 base for our staging server
-FROM vm/ubuntu:18.04
+FROM webapp.io/base:latest
 
 COPY . .
 
-RUN sudo apt-get update
-RUN sudo apt-get install parallel
-
-RUN chmod +x test.sh tests/one.sh tests/two.sh
+RUN chmod +x test.sh
 
 RUN ./test.sh
