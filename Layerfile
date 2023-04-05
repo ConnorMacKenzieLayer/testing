@@ -17,8 +17,8 @@ RUN echo '<b>another file</b>' > another.html
 COPY . .
 RUN ls
 
-# Expose the webserver in the staging server as a secure link.
-# Whenever someone clicks the link, we'll load this staging server and forward
-# their requests to it.
-RUN BACKGROUND python3 -m http.server 8080
-EXPOSE WEBSITE http://localhost:8080
+SPLIT 2
+
+RUN echo 'hello!'
+
+RUN echo "$SPLIT"
