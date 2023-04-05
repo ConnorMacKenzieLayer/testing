@@ -17,7 +17,7 @@ RUN echo '<b>another file</b>' > another.html
 COPY . .
 RUN ls
 
-SPLIT 2
+SPLIT UNORDERED 2
 
 RUN echo 'hello!'
 
