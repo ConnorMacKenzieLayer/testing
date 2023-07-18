@@ -11,4 +11,4 @@ COPY . .
 # Create some files
 RUN echo 'hello!'
 
-echo "$(cat .g/test.txt)"
+RUN echo "$(cat .g/test.txt)"
