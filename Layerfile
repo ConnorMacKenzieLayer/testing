@@ -1,14 +1,3 @@
-#Use an Ubuntu 18.04 base for our staging server
-FROM vm/ubuntu:22.04
+FROM ConnorMacKenzieLayer/test:v2
 
-# To note: Layerfiles create entire VMs, *not* containers!
-
-# Install python
-RUN apt-get update && apt-get install python3
-
-COPY . .
-
-# Create some files
-RUN echo 'hello!'
-
-RUN echo "$(cat .github/test.txt)"
+RUN echo done
