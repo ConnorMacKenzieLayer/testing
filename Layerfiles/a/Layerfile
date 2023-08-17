@@ -1,3 +1,3 @@
-FROM ./b
+FROM ../base
 
 RUN echo "test"
