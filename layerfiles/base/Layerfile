@@ -11,8 +11,4 @@ COPY . .
 # Create some files
 RUN echo 'hello! !!'
 
-BUTTON hello
-
-LABEL display_name=hello
-
 RUN echo "$(cat .github/test.txt)"

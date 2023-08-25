@@ -1,3 +1,8 @@
 FROM ../base
 
 RUN echo "test"
+
+
+BUTTON hello
+
+LABEL display_name=hello
