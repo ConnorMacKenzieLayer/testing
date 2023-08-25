@@ -9,6 +9,6 @@ RUN apt-get update && apt-get install python3
 COPY . .
 
 # Create some files
-RUN echo 'hello!'
+RUN echo 'hello! !!'
 
 RUN echo "$(cat .github/test.txt)"
