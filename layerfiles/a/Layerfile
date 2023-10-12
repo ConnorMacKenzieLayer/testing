@@ -2,7 +2,7 @@ FROM ../base
 
 RUN echo "test"
 
+WAIT ../base
 
-BUTTON hello
-
+RUN echo "test"
 LABEL display_name=hello
